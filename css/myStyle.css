@@ -17,14 +17,7 @@ body,
 	border-bottom: 3px solid #fcda59;
 }
 
-.dropdown.no-arrow .dropdown-toggle::after {
-	display: none;
-}
-
-.nav-item .nav-link .badge-counter {
-	position: absolute;
-	transform: scale(0.7);
-	transform-origin: top right;
-	right: 0.25rem;
-	margin-top: -0.25rem;
+.cuerpoPrincipal {
+	flex-grow: 1;
+	padding: 0;
 }
