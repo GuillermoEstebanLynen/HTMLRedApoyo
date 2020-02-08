@@ -1,0 +1,40 @@
+
+:root {
+	--amarillo-ba: #fcda59;
+	--color-division: #858796;
+}
+
+img{
+	max-width: 100%;
+}
+
+.navbar-nav{
+	display: flex;
+	align-items: center;
+}
+
+.topbar{
+	border-bottom: 3px solid var(--amarillo-ba);
+}
+
+.ba-footer{
+	max-height: 30px;
+}
+
+.ba-header{
+	max-height: 45px;
+}
+
+.logo-red{
+	max-width: 70%;
+	padding-bottom: 15px;
+}
+
+.sidebar-divider{
+	margin: 10px 0;
+	padding: 0;
+	width: 80%;
+	color: gray;
+	border-style: inset;
+	border-width: 1px;
+}
