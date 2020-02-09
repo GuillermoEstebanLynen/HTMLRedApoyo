@@ -4,6 +4,15 @@
 	--color-division: #858796;
 }
 
+body{
+	display: flex;
+	flex-direction: column;;
+}
+
+body > .wrapper{
+	flex-grow: 1;
+}
+
 img{
 	max-width: 100%;
 }
