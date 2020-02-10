@@ -20,6 +20,9 @@
 		rel="stylesheet">
 	<link href="css/styleTemplate.css" rel="stylesheet">
 
+	<!-- Custom styles for this page -->
+	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -145,7 +148,7 @@
 
 	</nav>
 
-	<div id="wrapper" class="wrapper">
+	<div id="wrapper">
 
 		<!-- Content Wrapper -->
 		<div id="content-wrapper">
@@ -316,125 +319,53 @@
 				<div class="container-fluid">
 
 					<!-- Page Heading -->
-					<div class="row d-sm-flex align-items-center justify-content-between mb-4">
-						<h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-						<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-							<i class="fas fa-download fa-sm text-white-50"></i>
-							Generar Reporte
-						</a>
+					<h1 class="h3 mb-2 text-gray-800">Operativos</h1>
+					<p class="mb-4">
+						Muesra el listado de todos los operativos los cuales se tienen en cuenta para la inscripción de alumnos.
+					</p>
+
+					<!-- DataTales Example -->
+					<div class="card shadow mb-4">
+						<div class="card-header py-3">
+							<h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+									<thead>
+										<tr>
+											<th>Nombre</th>
+											<th>Fecha de Inicio</th>
+											<th>Fecha de Fin</th>
+											<th>Activo</th>
+											<th>Acciones</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th><a href="#">Año 2020</a></th>
+											<th>01/03/2020</th>
+											<th>29/11/2020</th>
+											<th>
+												<a href="#" class="btn btn-success btn-circle btn-sm">
+													<i class="fas fa-check"></i>
+												</a>
+											</th>
+											<th>
+												<a href="#" class="btn btn-info btn-circle btn-sm">
+													<i class="fas fa-info-circle"></i>
+												</a>
+												<a href="#" class="btn btn-danger btn-circle btn-sm">
+													<i class="fas fa-trash"></i>
+												</a>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
 					</div>
 
-					<!-- Content Row -->
-					<div class="row">
-
-						<div class="col-xl-9 col-lg-10">
-
-							<!-- Area Chart -->
-							<div class="">
-								<div class="card shadow mb-4">
-									<!-- Card Header - Dropdown -->
-									<div
-										class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-										<h6 class="m-0 font-weight-bold text-primary">Cantidad de Estudiantes por día
-										</h6>
-										<div class="dropdown no-arrow">
-											<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-												aria-labelledby="dropdownMenuLink">
-												<div class="dropdown-header">Opciones:</div>
-												<a class="dropdown-item" href="#">Ver datos en tabla</a>
-												<a class="dropdown-item" href="#">Exportar Datos</a>
-											</div>
-										</div>
-									</div>
-									<!-- Card Body -->
-									<div class="card-body">
-										<div class="chart-area">
-											<canvas id="myAreaChart"></canvas>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<!-- Content Row -->
-						<div class="col-xl-3 col-lg-2">
-
-							<!-- Topbar Search -->
-							<form class="d-none d-sm-inline-block form-inline mb-4 navbar-search ">
-								<div class="input-group">
-									<input type="text" class="form-control border bg-white border-warning small"
-										placeholder="Buscar Estudiante..." aria-label="Search"
-										aria-describedby="basic-addon2">
-									<div class="input-group-append">
-										<button class="btn btn-warning" type="button">
-											<i class="fas fa-search fa-sm"></i>
-										</button>
-									</div>
-								</div>
-							</form>
-
-							<!-- Earnings (Monthly) Card Example -->
-							<div class="mb-4">
-								<div class="card border-left-primary shadow h-100 py-2">
-									<div class="card-body">
-										<div class="row no-gutters align-items-center">
-											<div class="col mr-2">
-												<div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-													Cantidad de Encuentros</div>
-												<div class="h5 mb-0 font-weight-bold text-gray-800">80</div>
-											</div>
-											<div class="col-auto">
-												<i class="fas fa-calendar fa-2x text-gray-300"></i>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Earnings (Monthly) Card Example -->
-							<div class="mb-4">
-								<div class="card border-left-success shadow h-100 py-2">
-									<div class="card-body">
-										<div class="row no-gutters align-items-center">
-											<div class="col mr-2">
-												<div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-													Cantidad de Estudiantes</div>
-												<div class="h5 mb-0 font-weight-bold text-gray-800">23</div>
-											</div>
-											<div class="col-auto">
-												<i class="fas fa-user-graduate fa-2x text-gray-300"></i>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Pending Requests Card Example -->
-							<div class="mb-4">
-								<div class="card border-left-warning shadow h-100 py-2">
-									<div class="card-body">
-										<div class="row no-gutters align-items-center">
-											<div class="col mr-2">
-												<div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-													Revisiones Pendientes</div>
-												<div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-											</div>
-											<div class="col-auto">
-												<i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
 				</div>
 
 			</div>
@@ -444,7 +375,7 @@
 		<!-- End of Main Content -->
 
 	</div>
-	<!-- End of Content Wrapper -->
+	<!-- End of Page Wrapper -->
 
 	<!-- Footer -->
 	<footer class="sticky-footer bg-dark d-flex justify-content-start pl-3 pr-3">
@@ -488,10 +419,11 @@
 	<script src="js/template.js"></script>
 
 	<!-- Page level plugins -->
-	<script src="vendor/chart.js/Chart.js"></script>
-
+	<script src="vendor/datatables/jquery.dataTables.js"></script>
+	<script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+  
 	<!-- Page level custom scripts -->
-	<script src="js/demo/chart-area-demo.js"></script>
+	<script src="js/demo/datatables-demo.js"></script>
 
 </body>
 

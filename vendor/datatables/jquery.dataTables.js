@@ -11210,7 +11210,7 @@
 	   *      } );
 	   *    } );
 	   */
-	  sInfoFiltered: "(filtered from _MAX_ total entries)",
+	  sInfoFiltered: "(filtrados de _MAX_ entradas totales)",
 
 	  /**
 	   * If can be useful to append extra information to the info string at times,
@@ -11324,7 +11324,7 @@
 	   *      } );
 	   *    } );
 	   */
-	  sLengthMenu: "Show _MENU_ entries",
+	  sLengthMenu: "Mostrar _MENU_ entradas",
 
 	  /**
 	   * When using Ajax sourced data and during the first draw when DataTables is
@@ -11347,7 +11347,7 @@
 	   *      } );
 	   *    } );
 	   */
-	  sLoadingRecords: "Loading...",
+	  sLoadingRecords: "Cargando...",
 
 	  /**
 	   * Text which is displayed when the table is processing a user action
@@ -11367,7 +11367,7 @@
 	   *      } );
 	   *    } );
 	   */
-	  sProcessing: "Processing...",
+	  sProcessing: "Procesando...",
 
 	  /**
 	   * Details the actions that will be taken when the user types into the
@@ -11401,7 +11401,7 @@
 	   *      } );
 	   *    } );
 	   */
-	  sSearch: "Search:",
+	  sSearch: "Buscar:",
 
 	  /**
 	   * Assign a `placeholder` attribute to the search `input` element
